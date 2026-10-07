@@ -167,3 +167,12 @@ a.card{text-decoration:none;color:inherit}
 .mbox .btn{width:100%;cursor:pointer;margin-top:4px}
 .mmsg{min-height:1.4em;margin:12px 0 0;font-size:14px;color:var(--mute)}
 .noscroll{overflow:hidden}
+
+/* fix: .wrap overrode section padding, so sections had no vertical space */
+section.wrap{padding-top:88px;padding-bottom:88px}
+section.hero{padding-top:110px;padding-bottom:80px}
+#about{padding-top:112px}
+.photo{width:100%;max-width:300px;aspect-ratio:1/1;display:block;background:none}
+.photo img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:50%}
+.contact{padding-top:104px;padding-bottom:104px}
+@media(max-width:760px){section.wrap{padding-top:56px;padding-bottom:56px}#about{padding-top:72px}.photo{margin:0 auto}}
