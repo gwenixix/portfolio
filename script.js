@@ -17,11 +17,11 @@
   $("filters").innerHTML = cats.map(function (c, i) { return '<button class="' + (i ? "" : "on") + '" data-c="' + esc(c) + '">' + esc(c) + "</button>"; }).join("");
   $("brands").innerHTML = S.brands.map(function (b) {
     var img = b.image ? '<img src="' + esc(b.image) + '" alt="' + esc(b.name) + '" loading="lazy">' : esc(initials(b.name));
-    return '<article class="card" data-c="' + esc(b.category) + '"><div class="img">' + img + '</div><div class="body">' +
+    return '<a class="card" href="brand.html?b=' + esc(b.slug) + '" data-c="' + esc(b.category) + '"><div class="img">' + img + '</div><div class="body">' +
       '<div class="meta">' + esc(b.category) + (b.years ? " · " + esc(b.years) : "") + "</div>" +
       "<h3>" + esc(b.name) + "</h3><p>" + esc(b.summary) + "</p>" +
-      "<ul>" + (b.did || []).map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul>" +
-      (b.link ? '<a class="visit" href="' + esc(b.link) + '" target="_blank" rel="noopener">Visit →</a>' : "") + "</div></article>";
+      "<ul>" + (b.did || []).slice(0, 3).map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul>" +
+      '<span class="visit">View details →</span></div></a>';
   }).join("");
   $("filters").addEventListener("click", function (e) {
     var c = e.target.getAttribute("data-c"); if (!c) return;
@@ -36,7 +36,8 @@
   $("timeline").innerHTML = S.experience.map(function (x) { return "<li><b>" + esc(x.role) + "</b><span>" + esc(x.org) + " · " + esc(x.when) + "</span></li>"; }).join("");
   $("tools").innerHTML = S.tools.map(function (t) { return '<span class="chip">' + esc(t) + "</span>"; }).join("");
   $("certs").innerHTML = S.certs.map(function (c) { return "<li>" + esc(c) + "</li>"; }).join("");
-  $("pubs").textContent = S.publications;
+  $("pubs").textContent = S.publicationsIntro;
+  $("pubList").innerHTML = S.publications.map(function (p) { return '<li><a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.title) + "</a><span>" + esc(p.venue) + "</span></li>"; }).join("");
 
   $("email").href = "mailto:" + S.email; $("email").textContent = S.email;
   $("phone").textContent = S.phone;
