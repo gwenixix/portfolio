@@ -7,10 +7,10 @@
 */
 window.SITE = {
   name: "Black Ink by Z.",
-  owner: "Zyrah Gwen I. Suaybaguio",
+  owner: "Zyrah Gwen Yu",
   tagline: "I help brands show up where their audience searches, scrolls, and shops.",
   role: "SEO Strategist and Content Manager",
-  location: "Davao City, Philippines",
+  location: "Philippines",
   email: "gwensuaybaguioofficial@gmail.com",
   phone: "+63 946 334 9092",
   linkedin: "https://www.linkedin.com/in/gwenofficial/",
