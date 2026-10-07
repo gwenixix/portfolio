@@ -17,6 +17,10 @@ window.SITE = {
   blog: "https://blackinkbyz.wordpress.com/",
   photo: "images/gwen.jpg",
 
+  /* CONTACT FORM: leave "" to open the visitor's email app. For real form submissions to your inbox,
+     make a free form at formspree.io and paste its URL here, e.g. "https://formspree.io/f/abcdwxyz" */
+  formEndpoint: "",
+
   about: [
     "I create content and SEO for software, service, and personal brands. My work runs from content and keyword research and site audits to scheduling, publishing, and reporting.",
     "I have managed cross-functional teams of technical writers, designers, and social media managers. Before marketing, I worked in research and taught at university, which is why I understand the importance of explaining topics and content clearly."
