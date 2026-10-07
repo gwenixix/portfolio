@@ -8,7 +8,7 @@
 window.SITE = {
   name: "Black Ink by Z.",
   owner: "Zyrah Gwen I. Suaybaguio",
-  tagline: "I write content that makes sense of complexity.",
+  tagline: "I help brands get found, grow, and stand out on every platform.",
   role: "SEO Strategist and Content Manager",
   location: "Davao City, Philippines",
   email: "gwensuaybaguioofficial@gmail.com",

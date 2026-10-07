@@ -194,3 +194,12 @@ h2{margin-bottom:40px}
 h2.mt{margin-top:64px}
 .contact{padding-top:140px;padding-bottom:140px}
 @media(max-width:760px){section,section.wrap{padding-top:80px;padding-bottom:80px}section.hero{padding-top:72px;padding-bottom:64px}#about{padding-top:100px}.about{gap:48px}.two{gap:56px}}
+
+/* services spacing + longer tagline */
+.hero h1{font-size:clamp(34px,6vw,68px);max-width:16em}
+#services .grid3{column-gap:64px;border-top:0}
+#services .grid3>div{padding:44px 0 48px;border-top:1px solid var(--line);border-bottom:0}
+#services .grid3 h3{margin:0 0 16px;font-size:21px}
+#services .grid3 p{line-height:1.75;font-size:16px}
+#services .grid3>div:hover{padding-left:0}
+#services h2{margin-bottom:24px}
