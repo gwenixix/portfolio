@@ -176,3 +176,21 @@ section.hero{padding-top:110px;padding-bottom:80px}
 .photo img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:50%}
 .contact{padding-top:104px;padding-bottom:104px}
 @media(max-width:760px){section.wrap{padding-top:56px;padding-bottom:56px}#about{padding-top:72px}.photo{margin:0 auto}}
+
+/* roomier spacing */
+section{padding-top:120px;padding-bottom:120px}
+section.wrap{padding-top:120px;padding-bottom:120px}
+section.hero{padding-top:120px;padding-bottom:110px}
+#about{padding-top:150px}
+h2{margin-bottom:40px}
+.grid{gap:32px}
+.filters{margin-bottom:40px}
+.about{gap:72px}
+.stats{margin-top:48px;padding-top:36px}
+#aboutText p{margin-bottom:1.8em}
+.grid3>div{padding:36px 28px 36px 0}
+.timeline li{padding:20px 0}
+.two{gap:80px}
+h2.mt{margin-top:64px}
+.contact{padding-top:140px;padding-bottom:140px}
+@media(max-width:760px){section,section.wrap{padding-top:80px;padding-bottom:80px}section.hero{padding-top:72px;padding-bottom:64px}#about{padding-top:100px}.about{gap:48px}.two{gap:56px}}
