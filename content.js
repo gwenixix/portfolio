@@ -14,7 +14,7 @@ window.SITE = {
   phone: "+63 946 334 9092",
   linkedin: "https://www.linkedin.com/in/gwenofficial/",
   blog: "https://blackinkbyz.wordpress.com/",
-  photo: "", // e.g. "images/me.jpg"
+  photo: "images/gwen.jpg", // your photo in the images folder
 
   about: [
     "I lead content and SEO for software, service, and personal brands. My work runs from keyword research and site audits to scripting, publishing, and reporting.",
@@ -24,13 +24,16 @@ window.SITE = {
   stats: [
     { value: "7+", label: "Years in content and SEO" },
     { value: "6", label: "Industries served" },
-    { value: "3", label: "Search platforms: Google, YouTube, Pinterest" }
+    { value: "9", label: "Platforms managed, from Google to TikTok" }
   ],
 
+  /* Scrolling strip of platforms. Add or remove names freely. */
+  platforms: ["Google", "YouTube", "Instagram", "TikTok", "Amazon", "Pinterest", "Twitter / X", "LinkedIn", "Facebook"],
+
   services: [
-    { title: "SEO Strategy", text: "Keyword research, on-page and off-page optimization, and full site audits across Google, YouTube, and Pinterest." },
+    { title: "SEO Strategy", text: "Keyword research, on-page and off-page optimization, and full site audits across Google, YouTube, Pinterest, and Amazon." },
     { title: "Content Management", text: "Blogs, website copy, and email sequences, from concept to publishing and performance review." },
-    { title: "Video and Social", text: "Scripts, content calendars, and trend-led, platform-native content for short and long form video." },
+    { title: "Social Media", text: "Content calendars and trend-led, platform-native content for Instagram, TikTok, Facebook, X, and LinkedIn, plus scripts for short and long form video." },
     { title: "Website Management", text: "WordPress publishing, internal linking, metadata, indexing, and site health." },
     { title: "Ecommerce", text: "Amazon account health, listings, and storefront content that stays compliant and converts." },
     { title: "Technical Writing", text: "Documentation, SOPs, and user manuals that turn complex products into clear steps." }
